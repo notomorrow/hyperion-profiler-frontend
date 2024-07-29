@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "command": "tsc",
+    "isShellCommand": true,
+    "args": ["-p", "."],
+    "showOutput": "silent",
+    "problemMatcher": "$tsc",
+    "compilerOptions": {
+      "module": "commonjs",
+      "sourceMap": true,
+      "experimentalDecorators": false,
+      "downlevelIteration": true,
+      "skipLibCheck": true,
+      "types": ["node"],
+      "forceConsistentCasingInFileNames": true,
+      "strictNullChecks": false,
+      "esModuleInterop": true,
+      "allowJs": true,
+      "target": "es2021",
+      "jsx": "react",
+      "removeComments": true,
+      "rootDir": "./src",
+      "resolveJsonModule": true,
+      "outDir": "./lib"
+    },
+    "exclude": [
+      "node_modules/**/*",
+      "lib/**/*",
+      "webpack.production.config.js",
+      "webpack.config.js",
+      "*.scss"
+    ]
+  }

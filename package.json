@@ -2,15 +2,28 @@
   "name": "hyperion-profiler-frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=development tsc && webpack --progress --config ./webpack.config.js",
+    "start": "NODE_ENV=development node ./lib/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "npm": "^10.8.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sqlite3": "^5.1.7",
-    "strftime": "^0.10.3"
+    "strftime": "^0.10.3",
+    "string-to-color": "^2.2.2",
+    "typescript": "^5.5.4",
+    "webpack": "^5.93.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/sqlite3": "^3.1.11",
+    "copy-webpack-plugin": "^12.0.2",
+    "webpack-cli": "^5.1.4"
   }
 }

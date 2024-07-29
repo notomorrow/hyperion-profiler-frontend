@@ -1,0 +1,17 @@
+.timeline {
+    aspect-ratio: 16/9;
+    overflow-x: scroll;
+}
+.timeline-group {
+    position: relative;
+    padding: 25px;
+}
+.timeline-group__header {
+    font-weight: bold;
+}
+.timeline-group__elements {
+    position: relative;
+}
+.timeline-group__entry {
+    position: absolute;
+}
